@@ -1,0 +1,30 @@
+@import '../../scss/style';
+
+.c-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__button {
+    background-color: $color-white;
+    color: $color-pink;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    padding: 10px;
+    @include font-settings(16px, $font-weight-semi-bold);
+    margin: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    &.disabled {
+      color: $color-gray-3;
+    }
+
+    img {
+      width: 15px;
+      margin: 0 5px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// scss-var-colors
+$color-white: #ffffff;
+$color-gray-1: #f9f8f7;
+$color-gray-2: #f1eeec;
+$color-gray-3: #cac7c5;
+$color-gray-4: #7d7a77;
+$color-gray-5: #222222;
+$color-pink: #f05b78;
+
+$color-highlight: $color-pink;
+$color-placeholder: $color-gray-1;
+$color-border: $color-gray-2;
+$color-text-1: $color-gray-3;
+$color-text-3: $color-gray-5;
+
+// Typography
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+
+$font-family: 'Proxima Nova';
+
+// Responsive Media
+
+$screen-xs-min: 320px;
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+

@@ -1,0 +1,69 @@
+@import '../../scss/style';
+
+.c-product-card {
+  margin: 10px;
+
+  &__wrapper {
+    position: relative;
+    background: linear-gradient(-90deg,#f9f8f7,#f4f2f0,#f9f8f7);
+    height: auto;
+    &__image {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      transition: all 1s
+    }
+
+    &__container {
+      position: absolute;
+      bottom: 10px;
+      left: 2px;
+
+      &__tag {
+        background-color: $color-white;
+        padding: 2px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: space-between;
+
+        &__discount {
+          @include font-settings(16px, 600);
+          color: $color-pink;
+        }
+
+        &__price {
+          @include font-settings(16px, 600);
+        }
+
+        &__price-discount {
+          color: $color-gray-4;
+          @include font-settings(16px,500);
+          text-decoration: line-through;
+          padding-left: 7px;
+        }
+      }
+    }
+
+    &__discount {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+
+      &__tag {
+        background-color: $color-pink;
+        padding: 3px;
+        border-radius: 2px;
+
+        &__value {
+          color: $color-white;
+          @include font-settings(12px,500);
+        }
+      }
+    }
+  }
+
+  &__skeletor {
+    height: 216px;
+    background: linear-gradient(-90deg,#f9f8f7,#f4f2f0,#f9f8f7);
+  }
+}

@@ -1,0 +1,81 @@
+@import '../../scss/style';
+
+.c-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: 10px auto;
+
+  @include sm() {
+    justify-content: end;
+    padding: 15px
+  }
+
+  @include xs(){
+    justify-content: end;
+    padding: 15px
+  }
+
+  &__l-container {
+
+    &__search-text {
+      @include font-settings(16px, $font-weight-bold);
+      color: $color-gray-5;
+
+      @include sm() {
+        display: none;
+      }
+
+      @include xs() {
+        display: none;
+      }
+    }
+
+    &__box {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      @include xs(){
+        flex-direction: row-reverse
+      }
+
+      &__text {
+        @include font-settings(16px, $font-weight-regular);
+        color: $color-pink;
+        cursor: pointer;
+      }
+
+      &__input-search {
+        border: 1px solid $color-border;
+        border-radius: 4px;
+        padding: 7px;
+        margin: 0px 15px;
+        display: flex;
+        align-items: center;
+        max-width: 220px;
+        width: 100%;
+
+        input {
+          border: none;
+          outline: none;
+          @include font-settings(16px, $font-weight-bold);
+          color: $color-gray-3;
+        }
+
+        &__button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+
+          &__image {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+
+}
